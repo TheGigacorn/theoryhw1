@@ -40,7 +40,11 @@ def roman_adder(roman_1, roman_2):
     lim = len(sorted_roman)
     i = 0
     while i < lim:
-        if sorted_roman.find("IIII") != -1:
+        if (sorted_roman[i] == 'I' and sorted_roman[i+3] == 'I'):
+
+
+        elif (sorted_roman[i] == 'V' and sorted_roman[i+4] == 'I'):
+
 
 
             

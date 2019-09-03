@@ -32,6 +32,18 @@ def roman_expander(base_roman):
 def roman_adder(roman_1, roman_2):
     comb_roman = roman_1 + roman_2
     
+    valueOrder = "MDCLXVI"
+
+    new_list = sorted(comb_roman, key=lambda word: [valueOrder.index(c) for c in word[0]])
+    sorted_roman = ''.join(new_list)
+
+    lim = len(sorted_roman)
+    i = 0
+    while i < lim:
+        if sorted_roman.find("IIII") != -1:
+
+
+            
 
 
 roman_num_1 = input("First number? \n")
